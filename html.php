@@ -1,5 +1,7 @@
 <?php
-require_once "spiel.php";
+require_once "datenbank.php";
+include "class_Spieler.php";
+include "class_Kampf.php";
 ?>
 
 <!DOCTYPE html>
