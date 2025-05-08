@@ -102,6 +102,9 @@ body {
     <input type="number" name="spieler1_lp" required>
     <label>Angriffswert:</label>
     <input type="number" name="spieler1_aw" required>
+    <label>Spieler type: (Feuer, Wasser, Erde, Luft)</label>
+    <input type="text" name="typ" required>
+    
 
     <h2>Spieler 2 eingeben</h2>
     <label>Name:</label>
@@ -110,6 +113,17 @@ body {
     <input type="number" name="spieler2_lp" required>
     <label>Angriffswert:</label>
     <input type="number" name="spieler2_aw" required>
+    <label>Spieler Type: (Feuer,  Wasser,  Erde,  Luft)</label>
+    <input type="text" name="typ" required>
+    <h2> Arena Type eingeben</h2>
+    <label for ="arena">Arena type wählen: </label>
+    <select name="arena" id="arena">
+        <option value="Feuer">Feuer</option>
+        <option value="Wasser">Wasser</option>
+        <option value="Erde">Erde</option>
+        <option value="Luft">Luft</option>
+    </select>
+    
 
     <input type="submit" value="Kampf starten">
 </form>

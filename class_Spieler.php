@@ -4,18 +4,21 @@ class Spieler {
     private $lebenspunkte;
     private $angriffswert;
     private $erstellungsDatum;
+    private $typ;
 
-    public function __construct($name, $lebenspunkte, $angriffswert) {
+    public function __construct($name, $lebenspunkte, $angriffswert,$typ="Feuer") {
         $this->name = $name;
         $this->lebenspunkte = $lebenspunkte;
         $this->angriffswert = $angriffswert;
         $this->erstellungsDatum = new DateTime();
+        $this->typ = $typ;
     }
 
     public function getName() { return $this->name; }
     public function getLebenspunkte() { return $this->lebenspunkte; }
     public function getAngriffswert() { return $this->angriffswert; }
     public function getErstellungsDatum() { return $this->erstellungsDatum; }
+    public function getType(){ return $this ->typ; }
 
     public function istBesiegt() {
         return $this->lebenspunkte <= 0;
